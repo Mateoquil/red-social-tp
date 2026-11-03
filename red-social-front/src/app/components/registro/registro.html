@@ -1,0 +1,57 @@
+<div class="window-container">
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Nuevo Usuario</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close" (click)="volver()">x</button>
+      </div>
+    </div>
+    <div class="window-body">
+      
+      <!-- Mensaje de error retro en vez de alert() -->
+      <div *ngIf="mensajeError" class="error-box">
+        ⚠ {{ mensajeError }}
+      </div>
+
+      <form (ngSubmit)="registrar()">
+        <div class="field-row">
+          <label>Nombre:</label>
+          <input name="nombre" type="text" [(ngModel)]="usuario.nombre" required />
+        </div>
+        <div class="field-row">
+          <label>Apellido:</label>
+          <input name="apellido" type="text" [(ngModel)]="usuario.apellido" required />
+        </div>
+        <div class="field-row">
+          <label>Correo:</label>
+          <input name="correo" type="email" [(ngModel)]="usuario.correo" required />
+        </div>
+        <div class="field-row">
+          <label>Usuario:</label>
+          <input name="username" type="text" [(ngModel)]="usuario.username" required />
+        </div>
+        <div class="field-row">
+          <label>Clave:</label>
+          <input name="password" type="password" [(ngModel)]="usuario.password" required />
+        </div>
+        <div class="field-row">
+          <label>Nacimiento:</label>
+          <input name="fechaNacimiento" type="date" [(ngModel)]="usuario.fechaNacimiento" required />
+        </div>
+        <div class="field-row">
+          <label>Bio:</label>
+          <input name="descripcion" type="text" [(ngModel)]="usuario.descripcion" />
+        </div>
+        <div class="field-row">
+          <label>Avatar:</label>
+          <input type="file" (change)="onFileSelected($event)" accept="image/*" required />
+        </div>
+        
+        <div class="actions">
+          <button type="button" (click)="volver()">Cancelar</button>
+          <button type="submit">Crear Cuenta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

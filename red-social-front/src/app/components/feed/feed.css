@@ -1,0 +1,83 @@
+.window-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-window {
+  background: var(--y2k-bg);
+  border: 2px solid;
+  border-color: var(--y2k-border-light) var(--y2k-border-darker) var(--y2k-border-darker) var(--y2k-border-light);
+  width: 600px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.title-bar {
+  background: var(--y2k-blue);
+  color: white;
+  padding: 3px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.window-body {
+  padding: 15px;
+}
+
+.sub-window {
+  border: 2px inset #ffffff;
+  padding: 10px;
+  background: #d4d0c8;
+  margin-bottom: 15px;
+}
+
+.field-row {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.field-row label {
+  width: 80px;
+}
+
+.field-row input {
+  flex: 1;
+  border: 2px solid;
+  border-color: var(--y2k-border-dark) var(--y2k-border-light) var(--y2k-border-light) var(--y2k-border-dark);
+  padding: 3px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.actions button, .sub-window button {
+  padding: 4px 12px;
+  background: var(--y2k-bg);
+  border: 2px solid;
+  border-color: var(--y2k-border-light) var(--y2k-border-darker) var(--y2k-border-darker) var(--y2k-border-light);
+  cursor: pointer;
+}
+
+.post-card {
+  background: white;
+  border: 2px inset #808080;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-card h4 {
+  margin: 0 0 5px 0;
+}
+
+.post-img {
+  display: block;
+  max-width: 100%;
+  margin: 8px 0;
+  border: 2px solid #000;
+}

@@ -1,0 +1,17 @@
+:root {
+  --y2k-bg: #c0c0c0;
+  --y2k-border-light: #ffffff;
+  --y2k-border-dark: #808080;
+  --y2k-border-darker: #000000;
+  --y2k-blue: #000080;
+  --y2k-text: #000000;
+}
+
+body {
+  background-color: var(--y2k-bg);
+  color: var(--y2k-text);
+  font-family: 'MS Sans Serif', Tahoma, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
